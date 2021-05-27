@@ -1,0 +1,49 @@
+<?php
+	
+	if(isset($_POST["submit"]))
+	{
+		$p=$_POST['principal_amt'];
+		$r=$_POST['rate_of_amt'];
+		$n=$_POST['year'];
+		
+		$simple_interest= $p*$r*$n/100;
+	}
+?>
+<html>
+<head>
+<title>simple_interest</title>
+</head>
+<body>
+<form action="" method="post">
+<table border="2" align="center">
+<tr>
+	<td colspan="2" align="center"> Simple Interest </td>
+</tr>
+
+<tr>
+	<td>principal amount :- </td>
+	<td><input type="text" name="principal_amt" value="<?php echo '$p';?>"required  /></td>
+</tr>
+
+<tr>
+	<td>rate of amount :- </td>
+	<td><input type="text" name="rate_of_amt" value="<?php echo '$r';?>"required  /></td>
+</tr>
+
+<tr>
+	<td>year :- </td>
+	<td><input type="text" name="year" value="<?php echo '$n';?>"required  /></td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center"></td>
+	<td><input type="suubmit" name="submit" value="submit"/></td>
+</tr>
+<tr>
+	<td>Answer is :- </td>
+	<td><input type="text" name="simple_interest" value="<?php echo 'Ssimple_interest' ;?>"required  /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
